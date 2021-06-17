@@ -1,0 +1,28 @@
+Displaying Your Array....
+[ 7 ,38 ,3 ,60 ,76 ,8 ,3 ,10 ,70 ,8 ,19 ,31 ]    
+
+ITERATION : 1
+Comparisons : 0
+ITERATION : 2
+Comparisons : 2
+ITERATION : 3
+Comparisons : 0
+ITERATION : 4
+Comparisons : 0
+ITERATION : 5
+Comparisons : 3
+ITERATION : 6
+Comparisons : 5
+ITERATION : 7
+Comparisons : 3
+ITERATION : 8
+Comparisons : 1
+ITERATION : 9
+Comparisons : 5
+ITERATION : 10
+Comparisons : 4
+ITERATION : 11
+Comparisons : 4
+
+Displaying Your Array....
+[ 3 ,3 ,7 ,8 ,8 ,10 ,19 ,31 ,38 ,60 ,70 ,76 ]    
