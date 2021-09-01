@@ -27,7 +27,6 @@ void menu();
      void AddToTail(int);
      void DelFromTail();
      void Display();
-     bool Search(int);
      void InsertAt(int,int);
      void DeleteAt(int);
 };
@@ -88,18 +87,6 @@ void SLL :: Display()
      }
      cout<<"NULL"<<endl;
 }
-bool SLL :: Search(int ele)
-{
-     node* temp = Head;
-     int count = 1;
-     while(temp != NULL)
-     {
-          if(temp->data == ele)
-          {return true;}
-          temp = temp->next;
-     }
-     return false;
-}
 void SLL :: InsertAt(int pos,int val)
 {
      node* newnode = new node(val);
@@ -140,7 +127,7 @@ void SLL :: menu()
      cout<<"\t2. Add to Tail"<<endl;
      cout<<"\t3. Delete from Head"<<endl;
      cout<<"\t4. Delete from Tail"<<endl;
-     cout<<"\t5. Search in the Linked List"<<endl;
+    
      cout<<"\t6. Insert in the Linked List"<<endl;
      cout<<"\t7. Delete in the Linked List"<<endl;
      cout<<"\t0. To Exit"<<endl;
@@ -186,16 +173,7 @@ int main()
                case 4:
                a.DelFromTail();
                break;
-          case 5:
-               int i3;     
-               cout<<endl<<"Enter the element : ";
-               cin>>i3;
-                if(a.Search(i3))
-                cout<<"Element is present in the Singly Linked List";
-                else
-                cout<<"Element is not present in the Singly Linked List";
-                break;
-          case 6:
+          case 4:
                int i4,j;
                cout<<endl<<"Enter the position : ";
                cin>>i4;
@@ -203,7 +181,7 @@ int main()
                cin>>j;
                a.InsertAt(i4,j);
                break;
-          case 7:
+          case 5:
                int i5;
                cout<<endl<<"Enter the position : ";
                cin>>i5;
