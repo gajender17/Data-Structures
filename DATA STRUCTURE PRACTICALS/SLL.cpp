@@ -127,7 +127,6 @@ void SLL :: menu()
      cout<<"\t2. Add to Tail"<<endl;
      cout<<"\t3. Delete from Head"<<endl;
      cout<<"\t4. Delete from Tail"<<endl;
-    
      cout<<"\t6. Insert in the Linked List"<<endl;
      cout<<"\t7. Delete in the Linked List"<<endl;
      cout<<"\t0. To Exit"<<endl;
@@ -170,10 +169,10 @@ int main()
           case 3:
                a.DelFromHead();
                break;
-               case 4:
+          case 4:
                a.DelFromTail();
                break;
-          case 4:
+          case 5:
                int i4,j;
                cout<<endl<<"Enter the position : ";
                cin>>i4;
@@ -181,7 +180,7 @@ int main()
                cin>>j;
                a.InsertAt(i4,j);
                break;
-          case 5:
+          case 6:
                int i5;
                cout<<endl<<"Enter the position : ";
                cin>>i5;
